@@ -1,84 +1,91 @@
-
-
-html, body {
-	margin: 0;
-	padding: 0;
-	min-width: 1000px;
-	font-family: Arial;
-    color: #4b4b4b;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-h2 {
-	font-size: 20px;
+.head__title {
+    color: white;
+}
+
+
+
+.main {
+
+    margin: 0 auto;
+}
+
+.head {
+    width: 100%;
+    height: 50px;
+    background-color: gray;
     text-align: center;
-	padding: 27px 0 27px 18px;
-	margin: 0 0 34px;
-	border-bottom: 1px solid #e5e5e5;
 }
 
-
-
-#column-left {
-	background-color: #f5f4f4;
-    padding: 0px;
-    margin-top: -5px;
-	width: 30%;
-    height: 100%;
-	float: left;
+#head__title {
+    padding: 10px;
+    color: rgb(red, green, blue)
 }
 
+.item__option-inner {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+}
 
-	.news-item {
-		padding-left: 18px;
-		margin-bottom: 27px;
-		font-size: 14px;
-	}
+.item__option-inner>div {
+    margin-top: 10px;
 
-	.news-item-text {
-		margin-bottom: 20px;
-	}
+}
 
-	.news-item-props {
-		font-size: 12px;
-		position: relative;
-	}
+input {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
 
-		.news-item-props a {
-			color: #91919f;
-		}
+.items {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-		.news-time {
-			position: absolute;
-			top: 0;
-			left: 120px;
-			padding-left: 15px;
-			background-image: url('img/icon-time.png');
-			background-repeat: no-repeat;
-		}
+.item__inner {
+    margin-top: 100px;
+}
 
-		.news-comments-count {
-			position: absolute;
-			top: 0;
-			left: 180px;
-			padding-left: 15px;
-			background-image: url('img/icon-comments.png');
-			background-repeat: no-repeat;
-		}
+.item__inner img {
+    width: 300px;
+    height: 250px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
 
+#item__one {
+    padding: 20px;
+}
 
+#item__two {
+    padding: 20px;
+}
 
-        #column-center {
-            background-color: #ffffff;
-            padding: 0px;
-            margin-top: -5px;
-            width:70% ;
-            display: inline-block;
-        }
+#item__three {
+    padding: 20px;
+}
 
-         #titlu{
-             display: flex;
-             margin-left: 200px;
-         }
-        #experienta{
-            margin-top: 100px;
-        }
+.button {
+    border: none;
+    color: white;
+    padding: 15px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    background-color: #04b1eb;
+    right: 850px;
+    top: 60px;
+}
